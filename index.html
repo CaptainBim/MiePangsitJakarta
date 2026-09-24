@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mie Pangsit Jakarta — Masakan Rumah &amp; Hangat</title>
+  <meta name="description" content="Warung makan dengan masakan rumahan yang hangat dan murah meriah. Buka setiap hari." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar-inner">
+      <a href="#beranda" class="brand">
+        <span class="brand-mark" aria-label="Logo Mie Pangsit Jakarta">
+          <img src="assets/img/pangsitmie.png" alt="Logo Mie Pangsit Jakarta" class="brand-logo-image" />
+        </span>
+        <span class="brand-text"><strong>Mie Pangsit Jakarta</strong></span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#beranda" class="nav-link">Beranda</a>
+        <a href="#tentang" class="nav-link">Tentang</a>
+        <a href="#menu" class="nav-link">Menu</a>
+        <a href="#kontak" class="nav-link">Kontak</a>
+        <a href="https://gofood.co.id/jakarta/restaurant/b4b1043d-7680-4f52-a6ee-58132a0f7b04?" target="_blank" rel="noopener" class="btn btn-gofood">
+          <img src="assets/img/Gofood-Logo-2016.png" alt="GoFood" class="btn-logo" />
+          <span>Go Food</span>
+        </a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Buka menu navigasi" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= SLIDER (HERO) ================= -->
+    <section class="slider-wrap" id="beranda" aria-label="Slider foto makanan">
+      <div class="slider" id="slider">
+        <!-- Setiap foto otomatis terpotong rapi oleh CSS (object-fit: cover) -->
+
+        <figure class="slide">
+          <img src="assets/img/slider-1.jpg" alt="Mie pangsit dan kuah hangat" loading="eager" />
+          <figcaption class="slide-caption">
+            <p class="slide-eyebrow">Bakso &amp; Mie</p>
+            <h1 class="slide-title">Bakso Kenyal dengan Kuah Hangat</h1>
+            <p class="slide-sub">Rasa gurih dan bikin nagih di setiap suap.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="slide">
+          <img src="assets/img/slider-2.jpg" alt="Bakso dan mie kuah" loading="lazy" />
+          <figcaption class="slide-caption">
+            <p class="slide-eyebrow">Mie Pangsit</p>
+            <h2 class="slide-title">Kuah Gurih, Mie Kenyal, Rasanya Nagih</h2>
+            <p class="slide-sub">Pilihan favorit untuk sarapan dan makan siang.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="slide">
+          <img src="assets/img/slider-3.jpg" alt="Nasi dan lauk rumahan" loading="lazy" />
+          <figcaption class="slide-caption">
+            <p class="slide-eyebrow">Siomay</p>
+            <h2 class="slide-title">Menu Favorit untuk Setiap Hari</h2>
+            <p class="slide-sub">Paduan mie pangsit dengan isian yang bikin puas.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="slide">
+          <img src="assets/img/slider-4.jpg" alt="Minuman segar dan dingin" loading="lazy" />
+          <figcaption class="slide-caption">
+            <p class="slide-eyebrow">Minuman Segar</p>
+            <h2 class="slide-title">Es Teh, Jeruk, dan Segarnya Hari Ini</h2>
+            <p class="slide-sub">Pilih minuman favorit untuk menambah nikmat santap.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="slide">
+          <img src="assets/img/slider-5.jpg" alt="Camilan dan menu pendamping" loading="lazy" />
+          <figcaption class="slide-caption">
+            <p class="slide-eyebrow">Camilan Favorit</p>
+            <h2 class="slide-title">Tambah Nikmat dengan Camilan Khas</h2>
+            <p class="slide-sub">Sesuai untuk menemani santap di rumah maupun di warung.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="slide">
+          <img src="assets/img/slider-6.jpg" alt="Pilihan menu mie pangsit Jakarta" loading="lazy" />
+          <figcaption class="slide-caption">
+            <p class="slide-eyebrow">Mie Pangsit Jakarta</p>
+            <h2 class="slide-title">Warung Favorit Setiap Hari</h2>
+            <p class="slide-sub">Rasa hangat, harga ramah, cocok untuk keluarga.</p>
+          </figcaption>
+        </figure>
+      </div>
+
+      <!-- Tombol panah -->
+      <button class="slider-btn slider-btn-prev" id="prevBtn" aria-label="Slide sebelumnya">‹</button>
+      <button class="slider-btn slider-btn-next" id="nextBtn" aria-label="Slide berikutnya">›</button>
+
+      <!-- Titik navigasi -->
+      <div class="slider-dots" id="sliderDots" aria-label="Navigasi slide"></div>
+
+      <!-- Leaflet bawah -->
+      <div class="slider-scroll" aria-hidden="true"></div>
+    </section>
+
+    <!-- ================= TENTANG ================= -->
+    <section class="section" id="tentang">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-media">
+            <img src="assets/img/menu-foto.jpg" alt="Daftar menu Mie Pangsit Jakarta" loading="lazy" />
+          </div>
+          <div class="about-text">
+            <p class="eyebrow">Tentang Kami</p>
+            <h2 class="section-title"><span>Mie Pangsit Jakarta</span></h2>
+            <p>
+              Kami menyajikan masakan rumahan yang dimasak hangat setiap hari dengan cita rasa khas. 
+              Menu favorit pelanggan mulai dari nasi dan lauk, mie dan bakso, sampai minuman segar.
+              Semua diracik dengan bahan segar dan harga yang bersahabat.
+            </p>
+            <ul class="about-list">
+              <li>✔ Menu lengkap &amp; selalu fresh</li>
+              <li>✔ Tempat bersih dan nyaman</li>
+              <li>✔ Bisa dine-in, take-away, atau pesan antar</li>
+              <li>✔ Buka setiap hari, pagi sampai malam</li>
+            </ul>
+            <a href="#menu" class="btn btn-primary">Lihat Menu Lengkap ↓</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MENU ================= -->
+    <section class="section section-menu" id="menu">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Daftar Menu</p>
+          <h2 class="section-title">Menu <span>Warung Kami</span></h2>
+          <p class="section-desc">
+            * Harga dan item menu di bawah adalah contoh — sesuaikan dengan menu asli warung Anda.
+          </p>
+        </div>
+
+        <!-- Filter kategori -->
+        <div class="menu-filters" id="menuFilters">
+          <button class="filter-btn is-active" data-filter="semua">Semua</button>
+          <button class="filter-btn" data-filter="mie">Mie</button>
+          <button class="filter-btn" data-filter="minuman">Minuman</button>
+          <button class="filter-btn" data-filter="topping">Topping</button>
+        </div>
+
+        <div class="menu-grid" id="menuGrid">
+          <article class="menu-card" data-category="mie">
+            <div class="menu-icon">🍜</div>
+            <div class="menu-info">
+              <h3 class="menu-name">Mie Pangsit Original</h3>
+              <p class="menu-desc">Mie pangsit dengan rasa original khas warung.</p>
+            </div>
+            <span class="menu-price">Rp&nbsp;27.000</span>
+          </article>
+
+          <article class="menu-card" data-category="mie">
+            <div class="menu-icon">🍲</div>
+            <div class="menu-info">
+              <h3 class="menu-name">Bakso</h3>
+              <p class="menu-desc">Keripik + pentol + somay + sawi.</p>
+            </div>
+            <span class="menu-price">Rp&nbsp;25.000</span>
+          </article>
+
+          <article class="menu-card" data-category="mie">
+            <div class="menu-icon">🥣</div>
+            <div class="menu-info">
+              <h3 class="menu-name">Mie Pangsit &amp; Ceker</h3>
+              <p class="menu-desc">Pangsit dengan tambahan ceker yang gurih.</p>
+            </div>
+            <span class="menu-price">Rp&nbsp;32.000</span>
+          </article>
+
+          <article class="menu-card" data-category="mie">
+            <div class="menu-icon">🎯</div>
+            <div class="menu-info">
+              <h3 class="menu-name">Mie Pangsit Paket Komplit</h3>
+              <p class="menu-desc">Paket lengkap dengan ceker dan telur.</p>
+            </div>
+            <span class="menu-price">Rp&nbsp;37.000</span>
+          </article>
+
+          <article class="menu-card" data-category="mie">
+            <div class="menu-icon">🥢</div>
+            <div class="menu-info">
+              <h3 class="menu-name">Mie Kering</h3>
+              <p class="menu-desc">Mie kering yang gurih dan renyah.</p>
+            </div>
+            <span class="menu-price">Rp&nbsp;25.000</span>
+          </article>
+
+          <article class="menu-card" data-category="mie">
+            <div class="menu-icon">🍜</div>
+            <div class="menu-info">
+              <h3 class="menu-name">Mie Gudubooos</h3>
+              <p class="menu-desc">Pilihan mie dengan rasa khas dan unik.</p>
+            </div>
+            <span class="menu-price">Rp&nbsp;20.000</span>
+          </article>
+
+          <article class="menu-card" data-category="mie">
+            <div class="menu-icon">🍜</div>
+            <div class="menu-info">
+              <h3 class="menu-name">Mie Santuy</h3>
+              <p class="menu-desc">Mie santai dengan rasa yang lembut.</p>
+            </div>
+            <span class="menu-price">Rp&nbsp;20.000</span>
+          </article>
+
+          <article class="menu-card" data-category="mie">
+            <div class="menu-icon">🍜</div>
+            <div class="menu-info">
+              <h3 class="menu-name">Mie Gurih</h3>
+              <p class="menu-desc">Pilihan mie dengan rasa gurih dan menggugah.</p>
+            </div>
+            <span class="menu-price">Rp&nbsp;27.000</span>
+          </article>
+
+          <article class="menu-card" data-category="mie">
+            <div class="menu-icon">🥡</div>
+            <div class="menu-info">
+              <h3 class="menu-name">Mie Pangsit &amp; Pentol</h3>
+              <p class="menu-desc">Combo mie pangsit dengan pentol favorit.</p>
+            </div>
+            <span class="menu-price">Rp&nbsp;32.000</span>
+          </article>
+
+          <article class="menu-card" data-category="mie">
+            <div class="menu-icon">🥚</div>
+            <div class="menu-info">
+              <h3 class="menu-name">Mie Pangsit &amp; Telur Puyuh</h3>
+              <p class="menu-desc">Cocok untuk yang suka rasa gurih lebih kaya.</p>
+            </div>
+            <span class="menu-price">Rp&nbsp;32.000</span>
+          </article>
+
+          <article class="menu-card" data-category="minuman">
+            <div class="menu-icon">🧋</div>
+            <div class="menu-info">
+              <h3 class="menu-name">Es Teh / Teh Hangat</h3>
+              <p class="menu-desc">Minuman klasik yang cocok menemani mie.</p>
+            </div>
+            <span class="menu-price">Rp&nbsp;7.000</span>
+          </article>
+
+          <article class="menu-card" data-category="minuman">
+            <div class="menu-icon">🥤</div>
+            <div class="menu-info">
+              <h3 class="menu-name">Teh Tawar</h3>
+              <p class="menu-desc">Teh tawar dingin atau hangat tanpa tambahan gula.</p>
+            </div>
+            <span class="menu-price">Rp&nbsp;5.000</span>
+          </article>
+
+          <article class="menu-card" data-category="minuman">
+            <div class="menu-icon">🍊</div>
+            <div class="menu-info">
+              <h3 class="menu-name">Es Jeruk / Jeruk Hangat</h3>
+              <p class="menu-desc">Segar dengan rasa jeruk yang menyegarkan.</p>
+            </div>
+            <span class="menu-price">Rp&nbsp;8.000</span>
+          </article>
+
+          <article class="menu-card" data-category="minuman">
+            <div class="menu-icon">☕</div>
+            <div class="menu-info">
+              <h3 class="menu-name">Cappuccino</h3>
+              <p class="menu-desc">Cappuccino creamy dengan aroma kopi yang kuat.</p>
+            </div>
+            <span class="menu-price">Rp&nbsp;8.000</span>
+          </article>
+
+          <article class="menu-card" data-category="minuman">
+            <div class="menu-icon">💧</div>
+            <div class="menu-info">
+              <h3 class="menu-name">Air Mineral</h3>
+              <p class="menu-desc">Air mineral dingin yang menyegarkan.</p>
+            </div>
+            <span class="menu-price">Rp&nbsp;6.000</span>
+          </article>
+
+          <article class="menu-card" data-category="minuman">
+            <div class="menu-icon">🍫</div>
+            <div class="menu-info">
+              <h3 class="menu-name">Coklat Es/Panas</h3>
+              <p class="menu-desc">Coklat hangat atau dingin yang nikmat.</p>
+            </div>
+            <span class="menu-price">Rp&nbsp;10.000</span>
+          </article>
+
+          <article class="menu-card" data-category="minuman">
+            <div class="menu-icon">☕</div>
+            <div class="menu-info">
+              <h3 class="menu-name">Kopi Hitam</h3>
+              <p class="menu-desc">Kopi hitam dengan aroma khas dan rasa kuat.</p>
+            </div>
+            <span class="menu-price">Rp&nbsp;8.000</span>
+          </article>
+
+          <article class="menu-card" data-category="minuman">
+            <div class="menu-icon">🍋</div>
+            <div class="menu-info">
+              <h3 class="menu-name">Lemon Tea Es/Panas</h3>
+              <p class="menu-desc">Minuman lemon tea dengan rasa segar dan pas.</p>
+            </div>
+            <span class="menu-price">Rp&nbsp;12.000</span>
+          </article>
+
+          <article class="menu-card" data-category="minuman">
+            <div class="menu-icon">🥥</div>
+            <div class="menu-info">
+              <h3 class="menu-name">Es Kelapa</h3>
+              <p class="menu-desc">Kelapa segar yang menyegarkan.</p>
+            </div>
+            <span class="menu-price">Rp&nbsp;20.000</span>
+          </article>
+
+          <article class="menu-card" data-category="topping">
+            <div class="menu-icon">🍢</div>
+            <div class="menu-info">
+              <h3 class="menu-name">Pentol</h3>
+              <p class="menu-desc">Tambahan pentol untuk rasa yang lebih nikmat.</p>
+            </div>
+            <span class="menu-price">Rp&nbsp;10.000</span>
+          </article>
+
+          <article class="menu-card" data-category="topping">
+            <div class="menu-icon">🐓</div>
+            <div class="menu-info">
+              <h3 class="menu-name">Ceker</h3>
+              <p class="menu-desc">Tambahan ceker gurih untuk variasi lebih lengkap.</p>
+            </div>
+            <span class="menu-price">Rp&nbsp;10.000</span>
+          </article>
+
+          <article class="menu-card" data-category="topping">
+            <div class="menu-icon">🥚</div>
+            <div class="menu-info">
+              <h3 class="menu-name">Telur Puyuh</h3>
+              <p class="menu-desc">Tambahan telur puyuh untuk tekstur dan rasa.</p>
+            </div>
+            <span class="menu-price">Rp&nbsp;10.000</span>
+          </article>
+
+          <article class="menu-card" data-category="topping">
+            <div class="menu-icon">🥟</div>
+            <div class="menu-info">
+              <h3 class="menu-name">Somay</h3>
+              <p class="menu-desc">Pilihan topping ringan dan gurih.</p>
+            </div>
+            <span class="menu-price">Rp&nbsp;10.000</span>
+          </article>
+        </div>
+
+        <p class="menu-note">
+          Ada menu spesial lain? Cek papan menu di warung atau tanyakan langsung ke kami!
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= CTA BAND ================= -->
+    <section class="cta-band">
+      <div class="container cta-inner">
+        <div>
+          <h2>Lapar? Jangan tunggu lama-lama! 😋</h2>
+          <p>Pesan sekarang lewat WhatsApp, menu siap disiapkan.</p>
+        </div>
+        <a href="https://gofood.co.id/jakarta/restaurant/b4b1043d-7680-4f52-a6ee-58132a0f7b04?" target="_blank" rel="noopener" class="btn btn-gofood btn-lg">
+          <img src="assets/img/Gofood-Logo-2016.png" alt="GoFood" class="btn-logo" />
+          <span>Go Food</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ================= KONTAK ================= -->
+    <section class="section" id="kontak">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Kunjungi Kami</p>
+          <h2 class="section-title">Lokasi &amp; <span>Jam Buka</span></h2>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <div class="contact-icon">📍</div>
+            <h3>Alamat</h3>
+            <p>Jl. Siradj Salman, Air Putih, Kec. Samarinda Ulu, Kota Samarinda, Kalimantan Timur 75124, Indonesia</p>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">🕐</div>
+            <h3>Jam Buka</h3>
+            <p>Senin – Minggu<br />10.00 – 22.00 WIB</p>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon contact-gofood">
+              <img src="assets/img/Gofood-Logo-2016.png" alt="GoFood" class="contact-gofood-logo" />
+            </div>
+            <h3>Pesan Melalui GoFood</h3>
+            <p><a href="https://gofood.co.id/jakarta/restaurant/b4b1043d-7680-4f52-a6ee-58132a0f7b04?" target="_blank" rel="noopener">Pesan Sekarang</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-brand">
+        <span class="brand-mark footer-brand-mark" aria-label="Logo Mie Pangsit Jakarta">
+          <img src="assets/img/pangsitmie.png" alt="Logo Mie Pangsit Jakarta" class="brand-logo-image" />
+        </span>
+        <span><strong>Mie Pangsit Jakarta</strong></span>
+      </div>
+      <p>Mie pangsit yang hangat, lezat, dan ramah di kantong. Terima kasih sudah mampir! 🙏</p>
+      <p class="footer-copy">© 2026 Mie Pangsit Jakarta.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
